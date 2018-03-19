@@ -1,6 +1,6 @@
 ##Copyright 2008-2015 Jelle Feringa (jelleferinga@gmail.com)
 ##
-##This file is part of pythonOCC.Core.
+##This file is part of pythonOCC
 ##
 ##pythonOCC is free software: you can redistribute it and/or modify
 ##it under the terms of the GNU Lesser General Public License as published by
@@ -13,7 +13,7 @@
 ##GNU Lesser General Public License for more details.
 ##
 ##You should have received a copy of the GNU Lesser General Public License
-##along with pythonOCC.Core.  If not, see <http://www.gnu.org/licenses/>
+##along with pythonOCC  If not, see <http://www.gnu.org/licenses/>
 
 from OCC.Core.BRepAdaptor import BRepAdaptor_Curve, BRepAdaptor_HCurve
 from OCC.Core.GCPnts import GCPnts_UniformAbscissa
