@@ -1,6 +1,6 @@
 ##Copyright 2008-2015 Jelle Feringa (jelleferinga@gmail.com)
 ##
-##This file is part of pythonOCC.
+##This file is part of pythonOCC.Core.
 ##
 ##pythonOCC is free software: you can redistribute it and/or modify
 ##it under the terms of the GNU Lesser General Public License as published by
@@ -13,10 +13,10 @@
 ##GNU Lesser General Public License for more details.
 ##
 ##You should have received a copy of the GNU Lesser General Public License
-##along with pythonOCC.  If not, see <http://www.gnu.org/licenses/>
+##along with pythonOCC.Core.  If not, see <http://www.gnu.org/licenses/>
 
-from OCC.TopoDS import TopoDS_Shell
-from OCC.ShapeAnalysis import ShapeAnalysis_Shell
+from OCC.Core.TopoDS import TopoDS_Shell
+from OCC.Core.ShapeAnalysis import ShapeAnalysis_Shell
 
 from OCCUtils.Topology import Topo
 from OCCUtils.base import BaseObject, GlobalProperties

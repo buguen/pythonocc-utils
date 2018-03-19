@@ -1,6 +1,6 @@
 ##Copyright 2008-2015 Jelle Feringa (jelleferinga@gmail.com)
 ##
-##This file is part of pythonOCC.
+##This file is part of pythonOCC.Core.
 ##
 ##pythonOCC is free software: you can redistribute it and/or modify
 ##it under the terms of the GNU Lesser General Public License as published by
@@ -13,14 +13,14 @@
 ##GNU Lesser General Public License for more details.
 ##
 ##You should have received a copy of the GNU Lesser General Public License
-##along with pythonOCC.  If not, see <http://www.gnu.org/licenses/>
+##along with pythonOCC.Core.  If not, see <http://www.gnu.org/licenses/>
 
-from OCC.BRepCheck import *
-from OCC.GeomAbs import *
-from OCC.TopoDS import topods, TopoDS_Shape
-from OCC.BRep import BRep_Tool_Surface
-from OCC.TopAbs import *
-from OCC.Geom import Handle_Geom_CylindricalSurface, Handle_Geom_Plane
+from OCC.Core.BRepCheck import *
+from OCC.Core.GeomAbs import *
+from OCC.Core.TopoDS import topods, TopoDS_Shape
+from OCC.Core.BRep import BRep_Tool_Surface
+from OCC.Core.TopAbs import *
+from OCC.Core.Geom import Handle_Geom_CylindricalSurface, Handle_Geom_Plane
 
 
 class ShapeToTopology(object):

@@ -1,6 +1,6 @@
 ##Copyright 2008-2015 Jelle Feringa (jelleferinga@gmail.com)
 ##
-##This file is part of pythonOCC.
+##This file is part of pythonOCC.Core.
 ##
 ##pythonOCC is free software: you can redistribute it and/or modify
 ##it under the terms of the GNU Lesser General Public License as published by
@@ -13,22 +13,22 @@
 ##GNU Lesser General Public License for more details.
 ##
 ##You should have received a copy of the GNU Lesser General Public License
-##along with pythonOCC.  If not, see <http://www.gnu.org/licenses/>
+##along with pythonOCC.Core.  If not, see <http://www.gnu.org/licenses/>
 
-from OCC.BRepAdaptor import BRepAdaptor_Curve, BRepAdaptor_HCurve
-from OCC.GCPnts import GCPnts_UniformAbscissa
-from OCC.Geom import Geom_OffsetCurve, Geom_TrimmedCurve
-from OCC.TopExp import topexp
-from OCC.TopoDS import TopoDS_Edge, TopoDS_Vertex, TopoDS_Face
-from OCC.gp import gp_Vec, gp_Dir, gp_Pnt
-from OCC.GeomLProp import GeomLProp_CurveTool
-from OCC.BRepLProp import BRepLProp_CLProps
-from OCC.GeomLib import geomlib
-from OCC.GCPnts import GCPnts_AbscissaPoint
-from OCC.GeomAPI import GeomAPI_ProjectPointOnCurve
-from OCC.ShapeAnalysis import ShapeAnalysis_Edge
-from OCC.BRep import BRep_Tool, BRep_Tool_Continuity
-from OCC.BRepIntCurveSurface import BRepIntCurveSurface_Inter
+from OCC.Core.BRepAdaptor import BRepAdaptor_Curve, BRepAdaptor_HCurve
+from OCC.Core.GCPnts import GCPnts_UniformAbscissa
+from OCC.Core.Geom import Geom_OffsetCurve, Geom_TrimmedCurve
+from OCC.Core.TopExp import topexp
+from OCC.Core.TopoDS import TopoDS_Edge, TopoDS_Vertex, TopoDS_Face
+from OCC.Core.gp import gp_Vec, gp_Dir, gp_Pnt
+from OCC.Core.GeomLProp import GeomLProp_CurveTool
+from OCC.Core.BRepLProp import BRepLProp_CLProps
+from OCC.Core.GeomLib import geomlib
+from OCC.Core.GCPnts import GCPnts_AbscissaPoint
+from OCC.Core.GeomAPI import GeomAPI_ProjectPointOnCurve
+from OCC.Core.ShapeAnalysis import ShapeAnalysis_Edge
+from OCC.Core.BRep import BRep_Tool, BRep_Tool_Continuity
+from OCC.Core.BRepIntCurveSurface import BRepIntCurveSurface_Inter
 
 # high-level
 from OCCUtils.Common import vertex2pnt, minimum_distance, assert_isdone, fix_continuity
@@ -457,7 +457,7 @@ class Edge(TopoDS_Edge, BaseObject):
 
 
 if __name__ == '__main__':
-    from OCC.BRepPrimAPI import BRepPrimAPI_MakeBox
+    from OCC.Core.BRepPrimAPI import BRepPrimAPI_MakeBox
     from OCCUtils.Topology import Topo
     b = BRepPrimAPI_MakeBox(10, 20, 30).Shape()
     t = Topo(b)

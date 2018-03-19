@@ -1,6 +1,6 @@
 ##Copyright 2008-2015 Jelle Feringa (jelleferinga@gmail.com)
 ##
-##This file is part of pythonOCC.
+##This file is part of pythonOCC.Core.
 ##
 ##pythonOCC is free software: you can redistribute it and/or modify
 ##it under the terms of the GNU Lesser General Public License as published by
@@ -13,12 +13,12 @@
 ##GNU Lesser General Public License for more details.
 ##
 ##You should have received a copy of the GNU Lesser General Public License
-##along with pythonOCC.  If not, see <http://www.gnu.org/licenses/>.
+##along with pythonOCC.Core.  If not, see <http://www.gnu.org/licenses/>.
 
 '''
 This module helps looping through topology
 '''
-from OCC.BRep import BRep_Tool
+from OCC.Core.BRep import BRep_Tool
 
 from OCCUtils.Topology import WireExplorer, Topo
 from OCCUtils.edge import Edge

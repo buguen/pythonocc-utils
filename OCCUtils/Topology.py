@@ -2,7 +2,7 @@
 
 ##Copyright 2008-2015 Jelle Feringa (jelleferinga@gmail.com)
 ##
-##This file is part of pythonOCC.
+##This file is part of pythonOCC.Core.
 ##
 ##pythonOCC is free software: you can redistribute it and/or modify
 ##it under the terms of the GNU Lesser General Public License as published by
@@ -15,23 +15,23 @@
 ##GNU Lesser General Public License for more details.
 ##
 ##You should have received a copy of the GNU Lesser General Public License
-##along with pythonOCC.  If not, see <http://www.gnu.org/licenses/>.
+##along with pythonOCC.Core.  If not, see <http://www.gnu.org/licenses/>.
 
 from __future__ import print_function
 
 __all__ = ['Topo', 'WireExplorer', 'dumpTopology']
 
-from OCC.BRep import BRep_Tool
+from OCC.Core.BRep import BRep_Tool
 
-from OCC.BRepTools import BRepTools_WireExplorer
-from OCC.TopAbs import (TopAbs_VERTEX, TopAbs_EDGE, TopAbs_FACE, TopAbs_WIRE,
+from OCC.Core.BRepTools import BRepTools_WireExplorer
+from OCC.Core.TopAbs import (TopAbs_VERTEX, TopAbs_EDGE, TopAbs_FACE, TopAbs_WIRE,
                         TopAbs_SHELL, TopAbs_SOLID, TopAbs_COMPOUND,
                         TopAbs_COMPSOLID)
-from OCC.TopExp import TopExp_Explorer, topexp_MapShapesAndAncestors
-from OCC.TopTools import (TopTools_ListOfShape,
+from OCC.Core.TopExp import TopExp_Explorer, topexp_MapShapesAndAncestors
+from OCC.Core.TopTools import (TopTools_ListOfShape,
                           TopTools_ListIteratorOfListOfShape,
                           TopTools_IndexedDataMapOfShapeListOfShape)
-from OCC.TopoDS import (topods, TopoDS_Wire, TopoDS_Vertex, TopoDS_Edge,
+from OCC.Core.TopoDS import (topods, TopoDS_Wire, TopoDS_Vertex, TopoDS_Edge,
                         TopoDS_Face, TopoDS_Shell, TopoDS_Solid,
                         TopoDS_Compound, TopoDS_CompSolid, topods_Edge,
                         topods_Vertex, TopoDS_Iterator)
